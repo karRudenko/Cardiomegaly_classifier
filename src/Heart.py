@@ -1,5 +1,5 @@
 from sklearn.metrics import accuracy_score
-from sklearn.model_selection import GridSearchCV, RepeatedStratifiedKFold, cross_val_score, StratifiedKFold, train_test_split
+from sklearn.model_selection import GridSearchCV, RepeatedStratifiedKFold, cross_val_score, train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
@@ -10,7 +10,7 @@ from sklearn.pipeline import Pipeline
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv("task_data.csv")
+data = pd.read_csv("src/task_data.csv")
 # some data are string type, so we need to make them float type
 for col in data.columns:
     if data[col].dtype == 'object': 

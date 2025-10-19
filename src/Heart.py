@@ -56,6 +56,7 @@ grid_search = GridSearchCV(
 grid_search.fit(X_train, y_train)
 
 print(f"Best accuracy (averaged CV): {grid_search.best_score_:.4f}")
+# Cheking which method is the best
 the_best = grid_search.best_score_, "K-Nearest Neighbors"
 
 
